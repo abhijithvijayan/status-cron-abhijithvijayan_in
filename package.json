@@ -1,0 +1,27 @@
+{
+  "name": "@abhijithvijayan/status-cron-abhijithvijayan_in",
+  "version": "0.0.1",
+  "description": "Cron to refresh status page cache of abhijithvijayan.in",
+  "main": "index.js",
+  "private": true,
+  "repository": "https://github.com/abhijithvijayan/status-cron-abhijithvijayan_in.git",
+  "author": {
+    "name": "abhijithvijayan",
+    "email": "email@abhijithvijayan.in",
+    "url": "https://abhijithvijayan.in"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.15.4"
+  },
+  "scripts": {
+    "deploy": "deta deploy",
+    "set:cron": "deta cron set '5 minutes'",
+    "remove:cron": "deta cron remove"
+  },
+  "dependencies": {
+    "deta": "^1.1.0",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.7"
+  }
+}
